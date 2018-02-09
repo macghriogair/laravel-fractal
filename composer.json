@@ -1,0 +1,32 @@
+{
+    "name": "macghriogair/laravel-fractal",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrick Mac Gregor",
+            "email": "macgregor.porta@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "laravel/framework": "^5.3",
+        "league/fractal": "^0.17.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Macgriog\\Fractal\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Macgriog\\Fractal\\FractalServiceProvider"
+            ]
+        }
+    }
+}
